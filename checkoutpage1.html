@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astro Chic Silver</title>
+    <script src="https://www.paypal.com/sdk/js?client-id=AWdQWt7bYWuN3IXQnziZ8WfcNClzajAfIjAzoLraeERPUVNo9YTC49sscH7PUOXQ9nFGObyjlTXb9y-U"></script>
+    <script src="app1.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="checkout.css">
+    <link rel="icon" type="image/png" href="logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+    
+
+    <header class="header-container">
+        <a href="index.html" class="logo-link"><img src="logo.jpg" class="logo" alt="Your Logo"></a>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="vault.html">VAULT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+   
+
+
+    <form id="checkoutForm" class="contact-form" action="https://formsubmit.co/naveenramadhar@gmail.com" method="POST">
+        <input type="hidden" name="_next" value="waitlist.html">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_subject" value="Order Information!">  
+
+            <h3>PERSONAL DETAILS</h3>
+
+    <label for="name">NAME:</label>
+    <input type="text" id="name" name="name" placeholder="ENTER YOUR NAME" required>
+
+    <label for="email">EMAIL:</label>
+    <input type="email" id="email" name="email" placeholder="ENTER YOUR EMAIL ADDRESS" required>
+
+    <label for="phone">PHONE NUMBER:</label>
+    <input type="tel" id="phone" name="phone" placeholder="ENTER YOUR PHONE NUMBER" required>
+
+    <h3>BILLING ADDRESS</h3>
+
+    <label for="billingAddress">STREET ADDRESS:</label>
+    <input type="text" id="billingAddress" name="billingAddress" placeholder="ENTER YOUR STREET ADDRESS" required>
+
+    <label for="billingCity">CITY:</label>
+    <input type="text" id="billingCity" name="billingCity" placeholder="ENTER YOUR CITY" required>
+
+    <label for="billingZip">ZIP CODE:</label>
+    <input type="text" id="billingZip" name="billingZip" placeholder="ENTER YOUR ZIP CODE" required>
+
+    <h3>SHIPPING ADDRESS</h3>
+
+    <label for="shippingAddress">STREET ADDRESS:</label>
+    <input type="text" id="shippingAddress" name="shippingAddress" placeholder="ENTER YOUR STREET ADDRESS" required>
+
+    <label for="shippingCity">CITY:</label>
+    <input type="text" id="shippingCity" name="shippingCity" placeholder="ENTER YOUR CITY" required>
+
+    <label for="shippingZip">ZIP CODE:</label>
+    <input type="text" id="shippingZip" name="shippingZip" placeholder="ENTER YOUR ZIP CODE" required>
+
+    <h3>PRODUCT DETAILS</h3>
+
+    <label for="productSize">SIZE:</label>
+    <select id="productSize" name="productSize" required>
+        <option value="" disabled selected hidden>CHOOSE SIZE</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+    </select>
+
+    <label for="productName">PRODUCT:</label>
+    <select id="productName" name="productName" required>
+        <option value="" disabled selected hidden>CHOOSE PRODUCT</option>
+        <option value="roseRiot">ROSÉ RIOT</option>
+        <option value="seductiveSuit">SEDUCTIVE SUIT</option>
+    </select>
+
+    <input type="submit" value="CONFIRM">
+</form>
+
+
+</body>
+</html>
+
+    

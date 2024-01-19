@@ -1,0 +1,103 @@
+* {
+    font-family: "Anonymous Pro";
+}
+
+
+
+body {
+    background-color: black;
+    color: white;
+    
+    margin: 0;
+    padding: 0;
+}
+
+h2, h3 {
+    color: silver;
+    background-color: transparent;
+}
+
+form {
+   
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: black;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(195, 12, 204, 0.5);
+    text-align: center; /* Center align content inside the form */
+}
+
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: silver;
+    background-color: transparent;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    border: 1px solid #777;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: rgba(195, 12, 204, 0.5);
+    color: black;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 1s, color 1s;
+    border: none;
+    border-radius: 6px;
+    margin: 0 auto; /* Center the button within the form */
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+select, .placeholder {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    border: 1px solid #777;
+    border-radius: 6px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+option {
+    background-color: #555;
+    color: white;
+}
+
+input::placeholder,
+textarea::placeholder,
+select::placeholder {
+    color: silver;
+}
+
+
+.contactform{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    margin: 0;
+
+}

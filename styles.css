@@ -1,0 +1,191 @@
+*{
+    background-color: black;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: "Anonymous Pro";
+    
+    }
+
+    .logo{
+        vertical-align: middle;
+        max-height: 80px;
+        }
+
+
+
+/* Loader Styles */
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000; /* Set the background to black */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loader img {
+    width: 100px; /* Adjust the size to fit your logo */
+    opacity: 1; /* Initial opacity is 1 */
+    transition: opacity 2s ease-out
+}
+
+
+.thanksmessage{
+    font-family: "Anonymous Pro";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    margin: 0;
+    color: white;
+  }
+
+
+
+h2, h3, h4, a, p{
+    color: silver;
+    text-align: center;
+    font-family: "Anonymous Pro";
+}
+
+
+header {
+    background-color: black;
+    color: silver;
+    text-align: center;
+}
+
+
+nav ul {
+    list-style-type: none;
+    background-color: black;
+    text-align: center;
+    font-size: 24px;
+    padding: 0;
+    margin: 0; /* Add this line to remove default margin */
+    margin-top: 10px;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+    padding: 10px;
+   
+}
+
+nav a {
+    text-decoration: none;
+    color: silver;
+    transition: color 0.3s ease;
+}
+
+ul li a:hover {
+    color: white;
+}
+
+section {
+    padding: 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    
+}
+
+.product {
+   
+    padding: 0px;
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product h3 {
+    font-size: 1.2rem;
+}
+
+.product p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+
+
+footer {
+    background-color: black;
+    color: silver;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Media query for screens with a width of 600 pixels or less (typical mobile screens) */
+@media (max-width: 600px) {
+    .product-grid {
+        grid-template-columns: 1fr; /* Display as a single column on smaller screens */
+    }
+
+
+    nav li {
+        margin-right: 0px;
+    }
+
+}
+
+.product {
+    position: relative;
+}
+
+.button-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 5px !important;
+}
+
+.black-button {
+    background-color: black;
+    color: #ffffff;
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px !important;
+}
+
+.her{
+    font-weight: 900;
+    color: rgba(195, 12, 204, 0.5);
+    font-family: 'Alex Brush', cursive;
+    font-size: 22px;
+  }
+
+  body {
+   
+    color: white;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+

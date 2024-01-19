@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>zlittlabel</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="faq.css">
+        <script defer src="app.js"></script>
+        <link rel="icon" type="image/png" href="logo.jpg">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <header>
+        <a href="index.html"><img src="logo.jpg" class="logo"></a>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="vault.html">VAULT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">1. How Do I Place An Order?</div>
+            <div class="answer">You Can Place An Order By Navigating To The Item And Proceeding To Checkout.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">2. What Payment Methods Do You Accept?</div>
+            <div class="answer">We Accept Various Payment Methods, Including PayPal And Credit/Debit Cards. Choose Your Preferred Payment Option At Checkout.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">3. Can I Change Or Cancel My Order After Placing It?</div>
+            <div class="answer">Unfortunately, We Are Unable To Change Or Cancel Orders Once They Have Been Placed. Please Double-Check Your Order Before Completing The Purchase.</div>
+        </div>
+
+        <!-- Add more FAQ items as needed -->
+
+    </main>
+
+    <script>
+        function toggleAnswer(element) {
+            var answer = element.nextElementSibling;
+            answer.classList.toggle("show");
+        }
+    </script>
+</body>
+</html>
